@@ -39,13 +39,13 @@ class Crontab extends AppModel {
     const SHELL_SCRIPT = 'crnspacefellows';
 
     # Cron-Zeitkonfigurationen
-    const MINUTE 		= '* * * * *';	# Jede Minute
-    const FIVE_MINUTES 	= '*/5 * * * *';# Alle 5 Minuten
-    const HOUR			= '0 * * * *';	# Jede volle Stunde
-    const DAY 			= '0 3 * * *';	# Jeden Tag um 03:00 Uhr
-    const CHRONIC 		= '0 9 * * 5';	# Jeden Tag um 06:00 Uhr
-    const IVI 		    = '* * * * *'; # Alle 2 Minuten
-    const MIDNIGHT 		= '0 0 * * *'; # Immer um Mitternacht
+    const MINUTE        = '* * * * *';	# Jede Minute
+    const FIVE_MINUTES  = '*/5 * * * *';# Alle 5 Minuten
+    const HOUR          = '0 * * * *';	# Jede volle Stunde
+    const DAY           = '0 3 * * *';	# Jeden Tag um 03:00 Uhr
+    const CHRONIC       = '0 9 * * 5';	# Jeden Tag um 06:00 Uhr
+    const IVI           = '* * * * *'; # Alle 2 Minuten
+    const MIDNIGHT      = '0 0 * * *'; # Immer um Mitternacht
 
     # Ordner im Linux-Dateisystem
     const CRONLOG_FOLDER = 'logs';
@@ -63,16 +63,16 @@ class Crontab extends AppModel {
      * @var array
      */
     private $jobs = array(
-        'mining_scheduler' 	=> self::MINUTE,
-        'infinion_data' 	=> self::MINUTE,
-        'mail_fallback' 	=> self::MINUTE,
-        'tournament' 	    => self::MINUTE,
-        'stats5' 			=> self::FIVE_MINUTES,
-        'hourly' 			=> self::HOUR,
-        'comeback' 			=> self::HOUR,
-        'chronic' 			=> self::CHRONIC,
-        'ivi' 			    => self::IVI,
-        'midnight' 		    => self::MIDNIGHT,
+        'mining_scheduler'  => self::MINUTE,
+        'infinion_data'     => self::MINUTE,
+        'mail_fallback'     => self::MINUTE,
+        'tournament'        => self::MINUTE,
+        'stats5'            => self::FIVE_MINUTES,
+        'hourly'            => self::HOUR,
+        'comeback'          => self::HOUR,
+        'chronic'           => self::CHRONIC,
+        'ivi'               => self::IVI,
+        'midnight'          => self::MIDNIGHT,
     );
 
 
